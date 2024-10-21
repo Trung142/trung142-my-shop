@@ -17,8 +17,7 @@ build:
 deploy:
   stage: deploy
   script:
-  - echo "Deploying to Hostinger"
-  - scp -P 65002 -r ./ u935944634@145.223.108.64:/home/u935944634/public_html
+    - echo "Deploying to Hostinger"
+    - scp -P 65002 -r ./ u935944634@145.223.108.64:/home/u935944634/public_html
   only:
-    - master
-
+    - main
